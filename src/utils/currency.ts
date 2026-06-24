@@ -1,6 +1,4 @@
-/**
- * Formats property price based on country and status
- */
+
 export const formatPropertyPrice = (price: number, country: string = 'Cameroon', status: string = '') => {
   const isCameroon = !country || country.toLowerCase().includes('cameroon') || country.toLowerCase().includes('cameroun');
   
