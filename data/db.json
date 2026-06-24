@@ -1,0 +1,142 @@
+{
+  "users": [
+    {
+      "id": "user_demo_1",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "passwordHash": "$2a$10$WqB7D60LgPZf5Cg/v.GZCOjXg4I/M5mJ8vjDFeLgQoXf9Y7s8U1M.",
+      "fullName": "John Doe",
+      "phoneNumber": "+1 (555) 123-4567",
+      "avatarUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=200",
+      "bio": "Experienced real estate enthusiast and property investor based in San Francisco.",
+      "createdAt": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-01-15T08:00:00.000Z"
+    },
+    {
+      "id": "user_4p54c90qy",
+      "username": "gy",
+      "email": "gail@gmail.com",
+      "passwordHash": "$2b$10$bS8.jp2hRunb8lx6BO0HHezhe8jPRm8FaijEpfi4bEBoQk2DYKohS",
+      "fullName": "gail",
+      "phoneNumber": "",
+      "avatarUrl": "https://api.dicebear.com/7.x/adventurer/svg?seed=gy",
+      "bio": "",
+      "createdAt": "2026-06-24T02:26:13.017Z",
+      "updatedAt": "2026-06-24T02:26:13.017Z"
+    }
+  ],
+  "properties": [
+    {
+      "id": "prop_1",
+      "title": "Scenic Mountain View Residence",
+      "description": "Nestled elegantly at the breezy foot of Mount Cameroon, this contemporary mountain mansion boasts panoramic views of Buea's lush slopes. Features a expansive landscaped garden, stunning floor-to-ceiling windows, professional chef's kitchen, and a private master suite balcony. Experience pure tranquility and fresh air.",
+      "price": 150000000,
+      "location": {
+        "city": "Buea",
+        "country": "Cameroon",
+        "address": "GCE Board Road, Buea"
+      },
+      "propertyType": "House",
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "area": 320,
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=600"
+      ],
+      "status": "For Sale",
+      "userId": "user_demo_1",
+      "createdAt": "2026-06-20T10:00:00.000Z",
+      "updatedAt": "2026-06-20T10:00:00.000Z",
+      "isDeleted": false
+    },
+    {
+      "id": "prop_2",
+      "title": "Premium Diplomatic Villa in Golf Quarter",
+      "description": "An executive-grade luxury estate located in the prestigious Golf residential district of Yaoundé. This ultra-secure architectural masterpiece features an indoor lap pool, spectacular entertainment terrace, grand high-ceiling reception hall, and state-of-the-art security installations. Crafted for absolute luxury.",
+      "price": 350000000,
+      "location": {
+        "city": "Yaoundé",
+        "country": "Cameroon",
+        "address": "Rue du Golf, Yaoundé"
+      },
+      "propertyType": "Villa",
+      "bedrooms": 6,
+      "bathrooms": 5.5,
+      "area": 550,
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&q=80&w=600"
+      ],
+      "status": "For Sale",
+      "userId": "user_demo_1",
+      "createdAt": "2026-06-21T14:30:00.000Z",
+      "updatedAt": "2026-06-21T14:30:00.000Z",
+      "isDeleted": false
+    },
+    {
+      "id": "prop_3",
+      "title": "Modern Beachfront Duplex in Kribi",
+      "description": "Awake to the soothing sounds of the Atlantic Ocean in this spectacular beachfront apartment in Kribi. Includes expansive open-concept dining area, modern marble fixtures, sweeping sea-view balconies, and exclusive private access to sandy white beaches. Your perfect tropical getaway.",
+      "price": 1800000,
+      "location": {
+        "city": "Kribi",
+        "country": "Cameroon",
+        "address": "Boulevard de la Plage, Kribi"
+      },
+      "propertyType": "Apartment",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": 210,
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=600"
+      ],
+      "status": "For Rent",
+      "userId": "user_demo_1",
+      "createdAt": "2026-06-22T09:15:00.000Z",
+      "updatedAt": "2026-06-22T09:15:00.000Z",
+      "isDeleted": false
+    },
+    {
+      "id": "prop_4",
+      "title": "Elegant Skyline Studio in Akwa",
+      "description": "Fully serviced luxury high-rise studio suite right in the bustling commercial heart of Douala. Includes round-the-clock professional security, uninterrupted solar-hybrid backup power, dedicated fitness center access, and premium fiber broadband internet. Optimal live/work convenience.",
+      "price": 450000,
+      "location": {
+        "city": "Douala",
+        "country": "Cameroon",
+        "address": "Boulevard de la Liberté, Akwa"
+      },
+      "propertyType": "Studio",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area": 65,
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1502672016927-94bd2d373853?auto=format&fit=crop&q=80&w=600"
+      ],
+      "status": "For Rent",
+      "userId": "user_demo_1",
+      "createdAt": "2026-06-23T16:45:00.000Z",
+      "updatedAt": "2026-06-23T16:45:00.000Z",
+      "isDeleted": false
+    }
+  ],
+  "favorites": [],
+  "messages": [
+    {
+      "id": "msg_1",
+      "propertyId": "prop_1",
+      "propertyTitle": "Modern Luxury Penthouse",
+      "senderName": "Alice Green",
+      "senderEmail": "alice@example.com",
+      "senderPhone": "+1 (555) 987-6543",
+      "messageText": "Hello, I am extremely interested in renting this penthouse. Is it available for a viewing this Saturday morning?",
+      "ownerId": "user_demo_1",
+      "createdAt": "2026-06-24T01:49:37.713Z"
+    }
+  ]
+}

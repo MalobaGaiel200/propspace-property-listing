@@ -1,0 +1,6 @@
+{
+  "name": "PropSpace",
+  "description": "A comprehensive property listing platform to list, browse, and manage properties for rent or sale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
