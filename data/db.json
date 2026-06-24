@@ -11,18 +11,6 @@
       "bio": "Experienced real estate enthusiast and property investor based in San Francisco.",
       "createdAt": "2026-01-15T08:00:00.000Z",
       "updatedAt": "2026-01-15T08:00:00.000Z"
-    },
-    {
-      "id": "user_4p54c90qy",
-      "username": "gy",
-      "email": "gail@gmail.com",
-      "passwordHash": "$2b$10$bS8.jp2hRunb8lx6BO0HHezhe8jPRm8FaijEpfi4bEBoQk2DYKohS",
-      "fullName": "gail",
-      "phoneNumber": "",
-      "avatarUrl": "https://api.dicebear.com/7.x/adventurer/svg?seed=gy",
-      "bio": "",
-      "createdAt": "2026-06-24T02:26:13.017Z",
-      "updatedAt": "2026-06-24T02:26:13.017Z"
     }
   ],
   "properties": [

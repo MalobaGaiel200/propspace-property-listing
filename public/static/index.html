@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropSpace Cameroon - Static Fallback & Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">🏢</span>
+                <span class="logo-text">PropSpace <span class="badge">Cameroon</span></span>
+            </div>
+            <nav class="nav">
+                <a href="#listings" class="nav-link">Properties</a>
+                <a href="#cities" class="nav-link">Destinations</a>
+                <a href="#contact" class="nav-link">Direct Agent Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <h1 class="hero-title">Discover Luxury Living in <span class="highlight">Cameroon</span></h1>
+            <p class="hero-subtitle">High-end apartments, modern duplexes, and prime land listings across Douala, Yaoundé, Buea, and Kribi. Curated with local precision and priced in FCFA.</p>
+            
+            <!-- Quick Search Form (Vanilla HTML/CSS/JS) -->
+            <div class="search-box">
+                <div class="search-grid">
+                    <div class="search-field">
+                        <label>Location</label>
+                        <select id="search-location">
+                            <option value="">All Cities</option>
+                            <option value="douala">Douala (Bonapriso, Akwa)</option>
+                            <option value="yaounde">Yaoundé (Bastos, Golf)</option>
+                            <option value="buea">Buea (Molyko, GR)</option>
+                            <option value="kribi">Kribi (Plage)</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label>Property Type</label>
+                        <select id="search-type">
+                            <option value="">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa / Duplex</option>
+                            <option value="land">Commercial Land</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label>Max Budget (FCFA)</label>
+                        <input type="number" id="search-price" placeholder="e.g. 5,000,000">
+                    </div>
+                    <button class="btn btn-search" onclick="simulateSearch()">Filter Properties</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cities -->
+    <section class="section" id="cities">
+        <div class="container">
+            <h2 class="section-title">Prime Locations</h2>
+            <p class="section-subtitle">Investing in Cameroon's fast-growing real estate hubs</p>
+            <div class="grid grid-cities">
+                <div class="city-card">
+                    <div class="city-info">
+                        <h3>Douala 🇨🇲</h3>
+                        <p>The economic capital. Elite residential developments in Bonapriso and prime office spaces in Akwa.</p>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <div class="city-info">
+                        <h3>Yaoundé 🇨🇲</h3>
+                        <p>The political capital. Upscale diplomatic villas in Bastos and secure, peaceful properties in Golf.</p>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <div class="city-info">
+                        <h3>Kribi 🇨🇲</h3>
+                        <p>The seaside paradise. Premium beach resorts, vacation rentals, and high-yielding tourist developments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Static Showcase Listings -->
+    <section class="section bg-light" id="listings">
+        <div class="container">
+            <h2 class="section-title">Featured Portfolios</h2>
+            <p class="section-subtitle">Real-time local listings formatted natively in FCFA</p>
+            
+            <div class="grid grid-listings" id="listings-grid">
+                <!-- Listing Item 1 -->
+                <div class="listing-card" data-city="douala" data-type="apartment" data-price="1200000">
+                    <div class="listing-badge">For Rent</div>
+                    <div class="listing-image" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="listing-content">
+                        <div class="listing-city">Douala - Bonapriso</div>
+                        <h3 class="listing-title">Modern 3-Bedroom Penthouse</h3>
+                        <div class="listing-price">1,200,000 FCFA / month</div>
+                        <p class="listing-desc">Ultra-modern penthouse featuring backup generators, water supply, 24/7 security, and panoramic city views.</p>
+                        <div class="listing-footer">
+                            <span>🛏️ 3 Beds</span>
+                            <span>🛁 4 Baths</span>
+                            <span>📏 240 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing Item 2 -->
+                <div class="listing-card" data-city="yaounde" data-type="villa" data-price="450000000">
+                    <div class="listing-badge bg-primary">For Sale</div>
+                    <div class="listing-image" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="listing-content">
+                        <div class="listing-city">Yaoundé - Bastos</div>
+                        <h3 class="listing-title">Luxury 5-Bedroom Duplex</h3>
+                        <div class="listing-price">450,000,000 FCFA</div>
+                        <p class="listing-desc">A magnificent estate situated in the secure Bastos diplomatic zone with swimming pool, large garden, and guest wing.</p>
+                        <div class="listing-footer">
+                            <span>🛏️ 5 Beds</span>
+                            <span>🛁 6 Baths</span>
+                            <span>📏 650 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing Item 3 -->
+                <div class="listing-card" data-city="kribi" data-type="apartment" data-price="150000">
+                    <div class="listing-badge">For Rent</div>
+                    <div class="listing-image" style="background-image: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="listing-content">
+                        <div class="listing-city">Kribi - Beachfront</div>
+                        <h3 class="listing-title">Ocean View Studio</h3>
+                        <div class="listing-price">150,000 FCFA / day</div>
+                        <p class="listing-desc">Cozy fully-furnished beachfront studio. Perfect for vacation stays, close to Kribi's famous seafood restaurants.</p>
+                        <div class="listing-footer">
+                            <span>🛏️ 1 Bed</span>
+                            <span>🛁 1 Bath</span>
+                            <span>📏 60 m²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Dynamic Budget Calculator Section -->
+    <section class="section" id="calculator">
+        <div class="container text-center">
+            <h2 class="section-title">Loan & Rent Calculator</h2>
+            <p class="section-subtitle">Instantly compute estimated administrative/agency fees in FCFA</p>
+            
+            <div class="calculator-card">
+                <div class="input-group">
+                    <label>Monthly Rent / Property Price (FCFA)</label>
+                    <input type="number" id="calc-amount" value="500000" oninput="calculateFees()">
+                </div>
+                <div class="results-grid">
+                    <div class="result-box">
+                        <span class="result-label">Agency Commission (10%)</span>
+                        <span class="result-value" id="fee-agency">50,000 FCFA</span>
+                    </div>
+                    <div class="result-box">
+                        <span class="result-label">Tax & Registration (5%)</span>
+                        <span class="result-value" id="fee-tax">25,000 FCFA</span>
+                    </div>
+                    <div class="result-box highlighted">
+                        <span class="result-label">Total Initial Estimate</span>
+                        <span class="result-value" id="fee-total">575,000 FCFA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section bg-dark" id="contact">
+        <div class="container container-narrow">
+            <h2 class="section-title text-white">Contact PropSpace Agents</h2>
+            <p class="section-subtitle text-gray">Submit direct inquiries securely. Our representative agents are ready to assist you in English or French.</p>
+            
+            <form id="static-contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label class="text-white">Full Name</label>
+                    <input type="text" placeholder="e.g. Jean-Pierre Eto'o" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="text-white">Phone Number (with country code)</label>
+                    <input type="text" placeholder="e.g. +237 6xx xxx xxx" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="text-white">Message / Listing ID</label>
+                    <textarea rows="4" placeholder="I am interested in..." required class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Direct Message</button>
+            </form>
+            <div id="contact-success" class="success-message" style="display: none;">
+                ✓ Message successfully recorded! An agent will call you within 24 hours.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 PropSpace Cameroon. Designed with pure HTML, CSS, JavaScript, and React.</p>
+        </div>
+    </footer>
+
+    <script src="search.js"></script>
+</body>
+</html>
