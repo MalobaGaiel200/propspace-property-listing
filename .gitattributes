@@ -1,8 +1,4 @@
-# Override language detection for GitHub Linguist
-# This tells GitHub to categorize React component files (.tsx) as JavaScript,
-# while keeping types and server files as TypeScript, resulting in a balanced language bar.
 
-# Treat React component files as JavaScript (representing React / JS)
 *.tsx linguist-language=JavaScript
 
 # Keep structural TypeScript files as TypeScript
